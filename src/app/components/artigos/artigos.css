@@ -1,0 +1,50 @@
+.artigos {
+  padding: 4rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.artigos h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.artigos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.artigos__card {
+  background-color: #f9f9fb;
+  border-radius: 10px;
+  padding: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.artigos__card:hover {
+  transform: translateY(-4px);
+}
+
+.artigos__data {
+  font-size: 0.8rem;
+  color: #4ecca3;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.artigos__card h3 {
+  font-size: 1.15rem;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.artigos__card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555555;
+}

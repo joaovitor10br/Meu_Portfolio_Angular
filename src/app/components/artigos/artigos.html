@@ -1,0 +1,13 @@
+<section class="artigos" id="artigos">
+  <h2>Artigos</h2>
+
+  <div class="artigos__grid">
+    @for (artigo of artigos; track artigo.titulo) {
+      <article class="artigos__card">
+        <span class="artigos__data">{{ artigo.data | date: 'dd MMM yyyy' }}</span>
+        <h3>{{ artigo.titulo }}</h3>
+        <p>{{ artigo.resumo }}</p>
+      </article>
+    }
+  </div>
+</section>

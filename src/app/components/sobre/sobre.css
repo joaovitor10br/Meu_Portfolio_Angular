@@ -41,3 +41,16 @@
 .sobre__botao:hover {
   background-color: #3aa583;
 }
+
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .sobre__foto img {
+    width: 160px;
+    height: 160px;
+  }
+}

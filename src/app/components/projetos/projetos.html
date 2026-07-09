@@ -1,0 +1,31 @@
+<section class="projetos" id="projetos">
+  <h2>Projetos</h2>
+
+  <div class="projetos__grid">
+    @for (projeto of projetos; track projeto.titulo) {
+      <div class="projetos__card">
+        <h3>{{ projeto.titulo }}</h3>
+        <span class="projetos__periodo">{{ projeto.periodo }}</span>
+        <p>{{ projeto.descricao }}</p>
+
+        <div class="projetos__tags">
+          @for (tech of projeto.tecnologias; track tech) {
+            <span class="projetos__tag">{{ tech }}</span>
+          }
+        </div>
+
+        <div class="projetos__acoes">
+          <button (click)="abrirLink(projeto.githubUrl)" class="projetos__botao">
+            GitHub
+          </button>
+
+          @if (projeto.demoUrl) {
+            <button (click)="abrirLink(projeto.demoUrl)" class="projetos__botao projetos__botao--secundario">
+              Ver Demo
+            </button>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

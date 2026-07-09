@@ -1,0 +1,45 @@
+<section class="contatos" id="contatos">
+  <h2>Contato</h2>
+  <p class="contatos__intro">Tem um projeto em mente ou quer bater um papo? Me manda uma mensagem.</p>
+
+  <div class="contatos__wrapper">
+    <form [formGroup]="form" (ngSubmit)="enviar()" class="contatos__form">
+      <div class="contatos__campo">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" formControlName="nome">
+        @if (nome?.invalid && nome?.touched) {
+          <span class="contatos__erro">Nome deve ter no mínimo 2 caracteres.</span>
+        }
+      </div>
+
+      <div class="contatos__campo">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email">
+        @if (email?.invalid && email?.touched) {
+          <span class="contatos__erro">Digite um email válido.</span>
+        }
+      </div>
+
+      <div class="contatos__campo">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" rows="5" formControlName="mensagem"></textarea>
+        @if (mensagem?.invalid && mensagem?.touched) {
+          <span class="contatos__erro">Mensagem deve ter no mínimo 10 caracteres.</span>
+        }
+      </div>
+
+      <button type="submit" class="contatos__botao">Enviar mensagem</button>
+
+      @if (enviado) {
+        <p class="contatos__sucesso">Seu app de email deve abrir em instantes. Obrigado pelo contatos!</p>
+      }
+    </form>
+
+    <div class="contatos__redes">
+      <a [href]="'https://wa.me/' + whatsappNumero" target="_blank" class="contatos__rede">WhatsApp</a>
+      <a [href]="linkedinUrl" target="_blank" class="contatos__rede">LinkedIn</a>
+      <a [href]="githubUrl" target="_blank" class="contatos__rede">GitHub</a>
+      <a [href]="'https://mail.google.com/mail/?view=cm&fs=1&to=' + emailDestino" target="_blank" class="contatos__rede">Email</a>
+    </div>
+  </div>
+</section>
