@@ -1,0 +1,43 @@
+.sobre {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sobre__foto img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sobre__conteudo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.sobre__conteudo p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.sobre__botao {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #4ecca3;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.sobre__botao:hover {
+  background-color: #3aa583;
+}

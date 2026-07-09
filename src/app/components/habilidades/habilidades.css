@@ -1,0 +1,37 @@
+.habilidades {
+  padding: 4rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.habilidades h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.habilidades__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.habilidades__categoria h3 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 0.8rem;
+}
+
+.habilidades__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.habilidades__tag {
+  background-color: #eaf7f3;
+  color: #1a1a2e;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,16 @@
+<section class="habilidades" id="habilidades">
+  <h2>Habilidades</h2>
+
+  <div class="habilidades__grid">
+    @for (categoria of categorias; track categoria.titulo) {
+      <div class="habilidades__categoria">
+        <h3>{{ categoria.titulo }}</h3>
+        <div class="habilidades__tags">
+          @for (item of categoria.itens; track item) {
+            <span class="habilidades__tag">{{ item }}</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

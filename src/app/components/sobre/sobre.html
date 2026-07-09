@@ -1,0 +1,14 @@
+<section class="sobre" id="sobre">
+  <div class="sobre__foto">
+    <img [src]="fotoUrl" alt="Foto de {{ nome }}">
+  </div>
+
+  <div class="sobre__conteudo">
+    <h2>Sobre mim</h2>
+    <p>{{ descricao }}</p>
+
+    <a [href]="curriculoUrl" download class="sobre__botao">
+      Baixar currículo
+    </a>
+  </div>
+</section>
