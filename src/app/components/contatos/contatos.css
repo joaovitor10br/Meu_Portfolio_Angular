@@ -5,7 +5,7 @@
 }
 
 .contatos h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #1a1a2e;
   margin-bottom: 0.5rem;
 }
@@ -13,6 +13,7 @@
 .contatos__intro {
   color: #666666;
   margin-bottom: 2.5rem;
+  font-size: 1.2rem;
 }
 
 .contatos__wrapper {

@@ -28,7 +28,7 @@
 }
 
 .artigos__data {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: #4ecca3;
   font-weight: bold;
   text-transform: uppercase;
@@ -37,14 +37,14 @@
 }
 
 .artigos__card h3 {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   color: #1a1a2e;
   margin-bottom: 0.6rem;
   line-height: 1.4;
 }
 
 .artigos__card p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: #555555;
 }

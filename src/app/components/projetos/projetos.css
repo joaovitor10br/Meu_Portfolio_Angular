@@ -36,14 +36,14 @@
 }
 
 .projetos__periodo {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #888888;
   margin-bottom: 0.8rem;
   display: block;
 }
 
 .projetos__card p {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: #444444;
   margin-bottom: 1rem;
