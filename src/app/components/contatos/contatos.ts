@@ -13,7 +13,7 @@ export class Contatos {
 
   readonly emailDestino = 'joaovitoralvesmartins10@gmail.com';
   readonly whatsappNumero = '27992756770';
-  readonly linkedinUrl = 'www.linkedin.com/in/joão-vitor-alves-martins-573574217';
+  readonly linkedinUrl = 'https://www.linkedin.com/in/jo%C3%A3o-vitor-alves-martins-573574217/';
   readonly githubUrl = 'https://github.com/joaovitor10br';
 
   constructor(private fb: FormBuilder) {
