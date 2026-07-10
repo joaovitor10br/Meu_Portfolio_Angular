@@ -36,10 +36,18 @@
     </form>
 
     <div class="contatos__redes">
-      <a [href]="'https://wa.me/' + whatsappNumero" target="_blank" class="contatos__rede">WhatsApp</a>
-      <a [href]="linkedinUrl" target="_blank" class="contatos__rede">LinkedIn</a>
-      <a [href]="githubUrl" target="_blank" class="contatos__rede">GitHub</a>
-      <a [href]="'https://mail.google.com/mail/?view=cm&fs=1&to=' + emailDestino" target="_blank" class="contatos__rede">Email</a>
-    </div>
+    <a [href]="'https://wa.me/' + whatsappNumero" target="_blank" class="contatos__rede" aria-label="WhatsApp">
+      <img src="/whatsapp_logo.png" alt="WhatsApp" class="contatos__icone">
+    </a>
+    <a [href]="linkedinUrl" target="_blank" class="contatos__rede" aria-label="LinkedIn">
+      <img src="/linkedin_logo.png" alt="LinkedIn" class="contatos__icone">
+    </a>
+    <a [href]="githubUrl" target="_blank" class="contatos__rede" aria-label="GitHub">
+      <img src="/github_logo.png" alt="GitHub" class="contatos__icone">
+    </a>
+    <a [href]="'https://mail.google.com/mail/?view=cm&fs=1&to=' + emailDestino" target="_blank" class="contatos__rede" aria-label="Email">
+      <img src="/gmail_logo.png" alt="Email" class="contatos__icone">
+    </a>
+  </div>
   </div>
 </section>
