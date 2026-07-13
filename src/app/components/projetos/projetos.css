@@ -6,7 +6,7 @@
 
 .projetos h2 {
   font-size: 2rem;
-  color: #1a1a2e;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
@@ -31,13 +31,13 @@
 
 .projetos__card h3 {
   font-size: 1.3rem;
-  color: #1a1a2e;
+  color: #ffffff;
   margin-bottom: 0.3rem;
 }
 
 .projetos__periodo {
   font-size: 1rem;
-  color: #888888;
+  color: #EEEEEE;
   margin-bottom: 0.8rem;
   display: block;
 }
@@ -45,7 +45,7 @@
 .projetos__card p {
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #444444;
+  color: #ffffff;
   margin-bottom: 1rem;
   flex-grow: 1;
 }
@@ -83,7 +83,7 @@
 
 .projetos__botao--secundario {
   background-color: transparent;
-  color: #1a1a2e;
+  color: #ffffff;
   border: 1px solid #1a1a2e;
 }
 

@@ -6,12 +6,12 @@
 
 .contatos h2 {
   font-size: 2.5rem;
-  color: #1a1a2e;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .contatos__intro {
-  color: #666666;
+  color: #EEEE;
   margin-bottom: 2.5rem;
   font-size: 1.2rem;
 }
@@ -37,7 +37,7 @@
 .contatos__campo label {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #1a1a2e;
+  color: #ffffff;
 }
 
 .contatos__campo input,
@@ -102,7 +102,6 @@
   width: 56px;
   height: 56px;
   justify-content:center;
-  border: 1px solid #dddddd;
   border-radius: 50%;
   transition: all 0.2s ease;
 }
@@ -114,8 +113,8 @@
 }
 
 .contatos__rede:hover {
-  background-color: #1a1a2e;
-  border-color: #1a1a2e;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 @media (max-width: 768px) {
