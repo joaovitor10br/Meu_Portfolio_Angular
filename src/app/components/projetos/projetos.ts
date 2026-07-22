@@ -63,6 +63,14 @@ export class Projetos {
     descricao: 'Projeto desenvolvido para praticar Programação Orientada a Objetos (POO), organização em camadas e versionamento com Git/GitHub.',
     tecnologias: ['Java'],
     githubUrl: 'https://github.com/joaovitor10br/Projeto_Sistema_Banco'
+  },
+
+  {
+    titulo: 'Final Fantasy Text RPG Game',
+    periodo: '2026',
+    descricao: 'Um RPG em modo texto desenvolvido em C++, inspirado na série Final Fantasy.',
+    tecnologias: ['C++'],
+    githubUrl: 'https://github.com/joaovitor10br/FinalFantasyTextRPG'
   }
 ];
 
