@@ -3,13 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
-  background-color: #1a1a2e;
-  color: #ffffff;
+  background-color: var(--color-ink);
+  color: var(--color-surface);
 }
 
 .header__logo {
+  font-family: var(--font-display);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .header__nav {
@@ -18,14 +19,14 @@
 }
 
 .header__nav a {
-  color: #ffffff;
+  color: var(--color-surface);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
 
 .header__nav a:hover {
-  color: #4ecca3;
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {

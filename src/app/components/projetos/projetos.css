@@ -1,13 +1,13 @@
 .projetos {
-  padding: 4rem 3rem;
+  padding: 5rem 3rem;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .projetos h2 {
-  font-size: 2rem;
-  color: #ffffff;
-  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: var(--color-ink);
+  margin-bottom: 2.5rem;
 }
 
 .projetos__grid {
@@ -17,35 +17,38 @@
 }
 
 .projetos__card {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .projetos__card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(20, 20, 31, 0.08);
+  transform: translateY(-3px);
 }
 
 .projetos__card h3 {
   font-size: 1.3rem;
-  color: #ffffff;
+  color: var(--color-ink);
   margin-bottom: 0.3rem;
 }
 
 .projetos__periodo {
-  font-size: 1rem;
-  color: #EEEEEE;
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
   margin-bottom: 0.8rem;
   display: block;
+  font-family: var(--font-mono);
 }
 
 .projetos__card p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #ffffff;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-ink-soft);
   margin-bottom: 1rem;
   flex-grow: 1;
 }
@@ -58,11 +61,12 @@
 }
 
 .projetos__tag {
-  background-color: #eaf7f3;
-  color: #1a1a2e;
+  background-color: var(--color-accent-soft);
+  color: var(--color-ink);
   padding: 0.3rem 0.7rem;
   border-radius: 20px;
   font-size: 0.8rem;
+  font-family: var(--font-mono);
 }
 
 .projetos__acoes {
@@ -72,19 +76,19 @@
 
 .projetos__botao {
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: bold;
+  padding: 0.65rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
-  background-color: #1a1a2e;
-  color: #ffffff;
+  background-color: var(--color-ink);
+  color: var(--color-surface);
   transition: opacity 0.2s ease;
 }
 
 .projetos__botao--secundario {
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid #1a1a2e;
+  color: var(--color-ink);
+  border: 1px solid var(--color-ink);
 }
 
 .projetos__botao:hover {

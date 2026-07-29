@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
-  background-color: #1a1a2e;
-  color: #cccccc;
+  padding: 1.8rem 3rem;
+  background-color: var(--color-ink);
+  color: var(--color-border);
   font-size: 0.9rem;
 }
 
@@ -14,13 +14,13 @@
 }
 
 .footer__links a {
-  color: #cccccc;
+  color: var(--color-border);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .footer__links a:hover {
-  color: #4ecca3;
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
