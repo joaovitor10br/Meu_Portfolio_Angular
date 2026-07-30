@@ -1,0 +1,36 @@
+.politica {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.politica h1 {
+  font-size: 2.2rem;
+  color: var(--color-ink);
+  margin-bottom: 0.5rem;
+}
+
+.politica__atualizacao {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+  margin-bottom: 2.5rem;
+}
+
+.politica h2 {
+  font-size: 1.3rem;
+  color: var(--color-ink);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.politica p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+  margin-bottom: 1rem;
+}
+
+.politica a {
+  color: var(--color-accent-dark);
+}
