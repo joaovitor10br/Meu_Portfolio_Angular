@@ -1,3 +1,5 @@
+declare function gtag_report_conversion(url?: string): boolean;
+
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 
@@ -40,6 +42,8 @@ export class Contatos {
 
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${this.emailDestino}&su=${assunto}&body=${corpo}`;
   window.open(gmailUrl, '_blank');
+
+  gtag_report_conversion();
 
   this.enviado = true;
   this.form.reset();
