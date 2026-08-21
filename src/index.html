@@ -24,12 +24,19 @@
 <!-- Event snippet for Enviar formulário de lead conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-function gtag_report_conversion(url) {
+function gtag_report_conversion(url, email) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
       window.location = url;
     }
   };
+
+  if (email) {
+    gtag('set', 'user_data', {
+      "email": email
+    });
+  }
+
   gtag('event', 'conversion', {
       'send_to': 'AW-18359153879/pXeGCLWZ1dgcENfpqbJE',
       'value': 1.0,
