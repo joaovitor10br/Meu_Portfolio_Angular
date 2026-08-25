@@ -34,6 +34,10 @@
       @if (enviado) {
         <p class="contatos__sucesso">Seu app de email deve abrir em instantes. Obrigado pelo contato!</p>
       }
+
+      @if (erroEnvio) {
+        <p class="contatos__erro">Ops, algo deu errado ao enviar. Tenta de novo ou usa um dos contatos ao lado.</p>
+      }
     </form>
 
     <div class="contatos__redes">

@@ -2,6 +2,7 @@ declare function gtag_report_conversion(url?: string, email?: string): boolean;
 
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contatos',
@@ -12,6 +13,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 export class Contatos {
   form: FormGroup;
   enviado = false;
+  erroEnvio = false;
 
   readonly emailDestino = 'joaovitoralvesmartins10@gmail.com';
   readonly whatsappNumero = '27992756770';
@@ -37,15 +39,23 @@ export class Contatos {
   }
 
   const { nome, email, mensagem } = this.form.value;
-  const assunto = encodeURIComponent(`Contato via portfólio - ${nome}`);
-  const corpo = encodeURIComponent(`Nome: ${nome}\nEmail: ${email}\n\nMensagem:\n${mensagem}`);
 
-  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${this.emailDestino}&su=${assunto}&body=${corpo}`;
-  window.open(gmailUrl, '_blank');
-
-  gtag_report_conversion(undefined, email);
-
-  this.enviado = true;
-  this.form.reset();
+  emailjs.send(
+    'service_od8oro1',
+    'template_90e7zp6',
+    { nome, email, mensagem },
+    { publicKey: 'UMEkS-4yk6cWF6lat' }
+  ).then(
+    () => {
+      gtag_report_conversion();
+      this.enviado = true;
+      this.erroEnvio = false;
+      this.form.reset();
+    },
+    (erro) => {
+      console.error('Erro ao enviar:', erro);
+      this.erroEnvio = true;
+    }
+  );
 }
 }
